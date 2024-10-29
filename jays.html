@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background-color: #fce4ec;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            color: #d81b60;
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        .heart {
+            font-size: 2em;
+            color: #ff4081;
+            animation: beat 0.8s infinite alternate;
+        }
+        .button, .heart-button {
+            background-color: #d81b60;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .surprise {
+            display: none;
+            font-size: 1.5em;
+            color: #d81b60;
+            margin-top: 20px;
+        }
+        @keyframes beat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Pavani!!</h1>
+        <p>WISHING YOU A BIRTHDAY FILLED WITH
+MOMENTS THAT MAKE YOUR HEART SMILE
+AND MEMORIES THAT LAST A LIFETIME.
+CHEERS TO YOU!</p>
+        <p class="heart">❤️</p>
+        <button class="heart-button" onclick="openPage()">❤️ Open a Surprise Page</button>
+        <p class="surprise" id="surpriseMessage">🎉 Surprise! May all your dreams come true! 🎉</p>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surpriseMessage").style.display = "block";
+        }
+
+        // Function to open index.html
+        function openPage() {
+            window.location.href = "intex.html";
+        }
+    </script>
+</body>
+</html>
